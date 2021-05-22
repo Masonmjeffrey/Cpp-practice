@@ -1,0 +1,76 @@
+First, read in an input value for variable valCount. Then, read valCount integers from input and output each integer on a newline after the string "read = ".
+Ex: If the input is 5 35 95 70 55 65, the output is:
+
+read = 35
+read = 95
+read = 70
+read = 55
+read = 65
+
+#include <iostream>
+using namespace std;
+
+int main() {
+   int valCount;
+   int userNum;
+   cin >> valCount;
+   cin >> userNum;
+   while(valCount > 0){
+      cout << "read = " << userNum << endl;
+      cin >> userNum;
+      valCount--;
+}
+
+   return 0;
+}
+
+First, read in an input value for variable numInput. Then, read numInput integers from input and output each on the same line wrapped in angle brackets. End with a newline.
+Ex: If the input is 2 -65 75, the output is:
+<-65><75>
+
+#include <iostream>
+using namespace std;
+
+int main() {
+   int numInput;
+   int userNum;
+   
+   cin >> numInput;
+   cin >> userNum;
+   
+   for(int i = 0; i < numInput; ++i){
+      cout << '<' << userNum << '>';
+      cin >> userNum;
+   }
+   cout << endl;
+   return 0;
+}
+
+First, read in an input value for variable numInts. Then, read numInts integers from input and output each on the same line with the character "," between each value. End with a newline.
+Note: "," should not be at the beginning or end of the output.
+Ex: If the input is 2 60 65, the output is:
+60,65
+#include <iostream>
+using namespace std;
+
+int main() {
+   int numInts;
+   int userNum;
+   
+   cin >> numInts;
+   cin >> userNum;
+   
+   for(int i = 0; i < numInts; ++i){
+      if( i < numInts - 1){
+         cout << userNum << ",";
+      }
+      else{
+         cout << userNum;
+      }
+   cin >> userNum;
+   }
+   cout << endl;
+   return 0;
+}
+
+
