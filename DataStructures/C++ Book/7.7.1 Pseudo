@@ -1,0 +1,45 @@
+declare vector of products : productList
+declare product currProduct
+declare int currPrice
+declare string currName
+declare int unisngned i
+declare product resultProduct
+
+take in currPrice
+If curr price has value {
+	take in currName
+	set currProduct price and name to currPrice and currName
+	append currProduct to vector productList
+	take in currPrice
+}
+Set the product result product = first position of vector productList 
+For (i= 0 , size of productList, increment i ++){
+	if(productList position i.GetPrice () > resultProduct.GetPrice()){
+		resultProduct = product.at(i)
+	}
+}
+
+
+Iterations
+currPrice = 9
+currPrice has positive value so read currName = Berries
+currentProduct productPrice = 9, productName = Berries
+append currProduct to the vector productList
+currPrice = 8
+currPrice has positive value so read currName = Flowers
+currProduct productPrice, productName = Flowers
+append currProduct to the vector productList
+currPrice = 13
+currPrice has positive value so read currName = Shirt
+currProduct productPrice = 13, ProductName = Shirt
+append currProduct to the vector productList
+currPrice = -1
+currPrice does not have a positive value so end the while loop
+
+
+Second Loop
+Check each element of the vector productList if the price at position i is greater
+than the price of resultProduct then set the result product = product.at(i);
+
+
+productList[(9, Berries), (8, Flowers), (13, Shirt)]
