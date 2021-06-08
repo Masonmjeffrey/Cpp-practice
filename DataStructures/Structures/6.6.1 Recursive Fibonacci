@@ -1,0 +1,32 @@
+Complete ComputeFibonacci() to return FN, where F0 is 0, F1 is 1, F2 is 1, F3 is 2, F4 is 3, and continuing: FN is FN-1 + FN-2. Hint: Base cases are N == 0 and N == 1.
+
+
+#include <iostream>
+using namespace std;
+
+int ComputeFibonacci(int N) {
+   if (N ==0){
+      cout <<"We got a zero" << endl;
+      return 0;
+   }
+   else if (N == 1){
+      cout << "We got a 1" << endl;
+      return 1;
+   }
+   else {
+      cout << "Fibbing" << endl;
+      int fib = ComputeFibonacci(N-1) + ComputeFibonacci(N-2);
+      return fib;
+   }
+}
+
+int main() {
+   int N;       // F_N, starts at 0
+ 
+   N = 4;
+   
+   cout << "F_" << N << " is "
+        << ComputeFibonacci(N) << endl;
+   
+   return 0;
+}
